@@ -14,7 +14,7 @@ The helm package manager
 
 # Installing helm chart for prometheus-exporter
 Use the helm install command to install the chart in a Kubernetes cluster:
-helm install prometheus-exporter-0.1.0.tgz
+```helm install prometheus-exporter-0.1.0.tgz```
 
 
 
