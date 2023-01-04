@@ -1,0 +1,13 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: exporter-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: exporter
+  minReplicas: 1
+  maxReplicas: 10
+  # This flag can be disabled if needed. 
+  targetCPUUtilizationPercentage: 80
